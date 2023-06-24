@@ -61,11 +61,11 @@ window.addEventListener("load", (event) => {
           document.querySelector("#pairs-clicked").innerHTML =
             memoryGame.pairsClicked;
           if (isPair) {
+            memoryGame.pairsGuessed += 1;
             memoryGame.pickedCards.shift();
             memoryGame.pickedCards.shift();
-            memoryGame.pairsGuessed++;
             document.querySelector("#pairs-guessed").innerHTML =
-              memoryGame.pairsGuessed / 2;
+              memoryGame.pairsGuessed;
           } else {
             memoryGame.pickedCards.forEach((card) => {
               card.setAttribute("class", "card");
@@ -73,12 +73,12 @@ window.addEventListener("load", (event) => {
             });
           }
         }
+        const didYouWin = memoryGame.checkIfFinished();
+        if(didYouWin){
+          console.log("Good game index!")
+        }
       }, 1500);
-      const didYouWin = memoryGame.checkIfFinished();
-      if(didYouWin){ 
-          console.log("Good job!")
-      }
-    });
+      });
   });
 });
 

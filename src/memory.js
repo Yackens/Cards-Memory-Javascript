@@ -30,18 +30,16 @@ class MemoryGame {
     // ... write your code here
     this.pairsClicked += 1;
     if (card1 === card2) {
-      this.pairsGuessed += 1;
       return true;
     }
     else {
       return false;
     }
   }
-
+  
   checkIfFinished() {
-    if (this.pairsGuessed === 1) {
-      this.gameEndScreen.style.display = "block";
-      console.log("Well played!")
+    if (this.pairsGuessed == this.cards.length/2) {
+        this.gameEndScreen.style.display = "block";
       return true;
     } else {
       return false;
