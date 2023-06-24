@@ -66,6 +66,40 @@ body {
   margin-left: 75%;
 }
 
+#game-end {
+  background-color: rgba(215, 40, 40, 0.9);
+  color: rgb(234, 234, 234);
+  border-radius: 8px;
+  font-size: 45px;
+  font-family: Arial;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  width: 1000px;
+  transform: translateY(-650px);
+}
+
+#logo {
+  width: 500px;
+  height: auto;
+  margin-top: -25px;
+  margin-bottom: -40px;
+  border-radius: 10px;
+}
+
+#restart-button {
+  font-size: 30px;
+  background-color:  #456783;;
+  color: #fff;
+  padding: 20px 40px;
+  border: 0;
+  box-shadow: 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+
 h1 {
   color: rgba(215, 40, 40, 0.9);
   font-weight: bolder;
