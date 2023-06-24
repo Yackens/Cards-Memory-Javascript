@@ -69,21 +69,21 @@ body {
 #game-end {
   background-color: rgba(215, 40, 40, 0.9);
   color: rgb(234, 234, 234);
-  border-radius: 8px;
+  border-radius: 40px;
   font-size: 45px;
   font-family: Arial;
   text-align: center;
   padding: 20px;
   margin: auto;
   width: 1000px;
-  transform: translateY(-650px);
+  transform: translateY(-630px);
 }
 
 #logo {
   width: 500px;
   height: auto;
-  margin-top: -25px;
-  margin-bottom: -40px;
+  margin-top: -30px;
+  margin-bottom: 20px;
   border-radius: 10px;
 }
 

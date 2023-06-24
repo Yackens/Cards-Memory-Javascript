@@ -74,11 +74,15 @@ window.addEventListener("load", (event) => {
           }
         }
       }, 1500);
+      const didYouWin = memoryGame.checkIfFinished();
+      if(didYouWin){ 
+          console.log("Good job!")
+      }
     });
   });
 });
 
-restartButton.addEventListener("click", function () {
+restartButton.addEventListener("click", () => {
   // Call the restartGame function when the button is clicked
   memoryGame.restartGame();
 });

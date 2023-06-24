@@ -39,8 +39,9 @@ class MemoryGame {
   }
 
   checkIfFinished() {
-    if (this.pairsGuessed === this.cards.length / 2) {
+    if (this.pairsGuessed === 1) {
       this.gameEndScreen.style.display = "block";
+      console.log("Well played!")
       return true;
     } else {
       return false;
